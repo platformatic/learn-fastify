@@ -5,12 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "c8 node --test --test-reporter=spec test.js"
   },
   "keywords": [],
   "author": "Matteo Collina <hello@matteocollina.com>",
   "license": "MIT",
   "dependencies": {
+    "c8": "^7.13.0",
     "close-with-grace": "^1.1.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
