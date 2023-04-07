@@ -1,0 +1,31 @@
+{
+  "name": "1_your_first_route",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node build/server.js",
+    "start:watch": "concurrently 'tsc -w' 'node --watch build/server.js | npx pino-pretty'",
+    "test": "c8 node --test --test-reporter=spec test.js"
+  },
+  "keywords": [],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^3.0.0",
+    "@types/node": "^18.15.11",
+    "c8": "^7.13.0",
+    "close-with-grace": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "fastify-tsconfig": "^1.0.1",
+    "pino": "^8.11.0",
+    "pino-pretty": "^10.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
