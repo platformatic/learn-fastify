@@ -1,0 +1,21 @@
+{
+  "name": "1_your_first_route",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "c8 node --test --test-reporter=spec test.js"
+  },
+  "keywords": [],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "c8": "^7.13.0",
+    "close-with-grace": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "fastify-plugin": "^4.5.0",
+    "pino-pretty": "^10.0.0"
+  }
+}
